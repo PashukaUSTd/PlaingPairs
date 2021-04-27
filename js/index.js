@@ -15,7 +15,7 @@ function renderCard(deck, fieldSize) {
     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
        <div class="front">
-          <img src = "/images/kanoha.jpeg"></img>
+          <img src = "images/kanoha.jpeg"></img>
        </div>
        <div class="back">
           <img src="${e}"></img>
@@ -100,10 +100,10 @@ function playPair(timerID) {
   })
 }
 
-const images = ['../images/naruto.jpeg', '../images/deidara.jpeg', '../images/saske.jpeg',
-'../images/madara.jpeg', '../images/boruto.jpeg', '../images/kakashi.jpeg', '../images/minato.jpeg',
-'../images/pain.jpeg','../images/itachi.png', '../images/jiraya.jpeg','../images/jogi.jpeg',
-'../images/gaara.jpeg']
+const images = ['images/naruto.jpeg', 'images/deidara.jpeg', 'images/saske.jpeg',
+'images/madara.jpeg', 'images/boruto.jpeg', 'images/kakashi.jpeg', 'images/minato.jpeg',
+'images/pain.jpeg','images/itachi.png', 'images/jiraya.jpeg','images/jogi.jpeg',
+'images/gaara.jpeg'];
 const $table = document.createElement('div');
 const $button = document.querySelector('button');
 
