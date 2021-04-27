@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../images/main-back.jpeg') no-repeat center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  margin-left: 50px;
+  height: 200px;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-container label {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+form button {
+  padding: 20px 0;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: rgba(102, 17, 17, 0.9);
+}
+
+.table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table3x4 {
+  width: 700px;
+}
+
+.table4x4 {
+  width: 720px;
+}
+
+.table5x4 {
+  width: 900px;
+}
+
+.play-again {
+  width: 292px;
+  color: aliceblue;
+  padding: 30px 0;
+  font-size: 20px;
+  background-color: rgba(102, 17, 17, 0.9);
+}
+
+.flip-container {
+  perspective: 1000;
+}
+
+.rotated {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back, img {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* здесь находится скорость перевертывания */
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* скройте обратную сторону во время переворота */
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* лицевая сторона размещена над обратной */
+
+.front {
+  z-index: 2;
+}
+
+/* обратная, изначально скрытая сторона */
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
