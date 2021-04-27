@@ -102,7 +102,7 @@ function playPair(timerID) {
 
 const images = ['images/naruto.jpeg', 'images/deidara.jpeg', 'images/saske.jpeg',
 'images/madara.jpeg', 'images/boruto.jpeg', 'images/kakashi.jpeg', 'images/minato.jpeg',
-'images/pain.jpeg','images/itachi.png', 'images/jiraya.jpeg','images/jogi.jpeg',
+'images/pain.jpeg','images/itachi.png', 'images/Jiraya.jpeg','images/Jogi.jpeg',
 'images/gaara.jpeg'];
 const $table = document.createElement('div');
 const $button = document.querySelector('button');
