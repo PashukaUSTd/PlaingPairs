@@ -116,10 +116,9 @@ $button.addEventListener('click', function(e) {
   inputs.forEach(e => {
     if (e.checked) {
       callFunc(2, +e.id);
+      form.classList.add('visually-hidden');
     }
   })
-
-  form.classList.add('visually-hidden');
 
   let timerID = setTimeout(function() {
     window.location.reload();
